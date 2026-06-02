@@ -1,0 +1,1754 @@
+﻿window.__SITE_DATA__ = {
+  "pages": [
+    {
+      "id": "site",
+      "name": "场地分析",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "text",
+          "label": "说明",
+          "content": "场地分析是对建筑场地进行全面评估..."
+        },
+        {
+          "id": "s2",
+          "type": "image",
+          "label": "场地全景",
+          "content": "",
+          "caption": "总图"
+        },
+        {
+          "id": "sec_1778553042446",
+          "type": "image",
+          "label": "场地气候分析",
+          "content": "",
+          "caption": "日照分析，风玫瑰图，气温折线图"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block_1778934342137",
+          "label": "场地现状",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/总图.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/场地拼贴.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "场地主要问题：\n技术设施\n卫生条件\n公共空间……"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1778936323161",
+          "label": "气候条件",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/风玫瑰.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/风向分析.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/年降水.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/太阳辐射.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "气候问题"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779001520578",
+          "label": "建筑文化",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式建筑"
+                },
+                {
+                  "type": "image",
+                  "src": "image/传统藏式民居.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/央木布村委会.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式门"
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式门1.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式门2.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式窗"
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式窗1.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式窗2.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式传统纹样"
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式纹样.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scheme",
+      "name": "方案生成",
+      "sections": [
+        {
+          "id": "s3",
+          "type": "text",
+          "label": "说明",
+          "content": "方案生成阶段包括概念设计和方案比选..."
+        },
+        {
+          "id": "s4",
+          "type": "image",
+          "label": "概念出发",
+          "content": "",
+          "caption": "草图"
+        },
+        {
+          "id": "sec_1778553128006",
+          "type": "image",
+          "label": "前期方案比选",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553564061",
+          "type": "image",
+          "label": "全流程参数化",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553616372",
+          "type": "image",
+          "label": "遗传算法多目标优化",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553181963",
+          "type": "image",
+          "label": "方案轴侧图",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553191637",
+          "type": "image",
+          "label": "方案平面图",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553201955",
+          "type": "image",
+          "label": "方案剖面图",
+          "content": "",
+          "caption": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block_1779008019426",
+          "label": "概念生成",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "场地中的风环境较为恶劣，\n建筑构件的脆弱性\n高原鼠兔对大风的应对措施"
+                },
+                {
+                  "type": "image",
+                  "src": "image/高原鼠兔.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019493532",
+          "label": "参数化控制",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/grasshopper文件高清.png",
+                  "caption": "grasshopper文件",
+                  "wallpaper": true
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/grasshopper文件高清.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779008128541",
+          "label": "初期方案比选",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/初期方案1.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/初期方案2.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "方案一能够减小风压，但是无法为建筑构件表面提供庇护"
+                },
+                {
+                  "type": "text",
+                  "content": "能够在卸掉风压的同时形成风影区，助力建筑通风，保护抬眼能光伏板构件"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/建筑风环境.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "基础形式列举\n考虑到哪些因素\n进行了12+方案比选\n最终方案的优势：风环境模拟下，太阳能构建不会收到直接破坏，回流气流还能够为室内提供平稳通风。\n原创风环境模拟程序github链接：https://github.com/yiyiy12345/wind-simulation-for-graduation-project.git"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/基础形式列举.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779016444225",
+          "label": "中期方案比选",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "中期集中在建筑力传递方式上的比选\n称重墙？拱？\n下图左右滚动一左一右"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/双排方案1.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/双排方案2.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "确定方案为单排后，进行形式推演"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/单排方案2.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/单排方案3.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/单排方案1.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "方案一\n落选原因"
+                },
+                {
+                  "type": "text",
+                  "content": "方案二\n入选原因"
+                },
+                {
+                  "type": "text",
+                  "content": "方案三\n落选原因"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779018797953",
+          "label": "技术图纸",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/一层平面图 (2).jpg",
+                  "caption": "一层平面图",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/地下一层平面图 (2).jpg",
+                  "caption": "地下一层平面图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/剖面图 [转换].jpg",
+                  "caption": "长轴剖面图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/立面图 [转换].jpg",
+                  "caption": "立面图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779018762883",
+          "label": "方案效果图",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/门前人眼.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/鸟瞰1.png",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/鸟瞰2_upscale01.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/活动室.png",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/阳光房.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/诊疗室.png",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/输液室.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "name": "建筑构造",
+      "sections": [
+        {
+          "id": "sec_1778553219899",
+          "type": "text",
+          "label": "结构生成",
+          "content": "",
+          "caption": "",
+          "texts": [
+            {
+              "content": ""
+            }
+          ]
+        },
+        {
+          "id": "sec_1778553233546",
+          "type": "image",
+          "label": "方案爆炸图",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553389318",
+          "type": "image",
+          "label": "方案分件",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553255739",
+          "type": "image",
+          "label": "节点大样",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553457885",
+          "type": "image",
+          "label": "构建列表",
+          "content": "",
+          "caption": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block_1778660167488",
+          "label": "构造设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "设计深入构造层面，不仅要考虑结构合理性，还要考虑建造效率。\n该方案采用装配式设计，尽可能将步骤集成在工厂中完成，减少现场作业步骤。"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/建造顺序 [转换].jpg",
+                  "caption": "建造顺序",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019228143",
+          "label": "基础构造设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/基础轴侧 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/基础构件 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/楼板爆炸图 [转换].jpg",
+                  "caption": "预制楼板构造",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019276024",
+          "label": "承重墙构造设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/承重墙爆炸图 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/和基础连接 [转换].jpg",
+                  "caption": "和基础连接构造图",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/和相邻承重墙连接 [转换].jpg",
+                  "caption": "相邻板片连接构造图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019294990",
+          "label": "UHPC曲面屋顶构造设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/屋顶分件 [转换].jpg",
+                  "caption": "爆炸图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/屋顶链接构造].jpg",
+                  "caption": "分件连接节点构造设计",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/屋顶链接构造中段 金属构件种类.jpg",
+                  "caption": "金属构件种类",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/节点1 [转换].jpg",
+                  "caption": "①",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/节点2 [转换].jpg",
+                  "caption": "②",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/节点3 [转换].jpg",
+                  "caption": "③",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                },
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                },
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/节点4 [转换].jpg",
+                  "caption": "④",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/节点5 [转换].jpg",
+                  "caption": "⑤",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/前后拱连接 [转换].jpg",
+                  "caption": "⑥",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                },
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                },
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/屋顶链接构造外段 [转换].jpg",
+                  "caption": "边边板片分件连接点构造设计",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/屋顶链接构造外段 金属构件种类.jpg",
+                  "caption": "金属构件种类",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/节点6 [转换].jpg",
+                  "caption": "节点6",
+                  "wallpaper": false
+                },
+                {
+                  "type": "text",
+                  "content": ""
+                },
+                {
+                  "type": "text",
+                  "content": ""
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "构造描述"
+                },
+                {
+                  "type": "text",
+                  "content": ""
+                },
+                {
+                  "type": "text",
+                  "content": ""
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/构造层 [转换].jpg",
+                  "caption": "构造层集成",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/张拉索 [转换].jpg",
+                  "caption": "张拉索",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/张拉索节点 [转换].jpg",
+                  "caption": "节点①",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "设置张拉索的必要性\n张拉索施工步骤"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779094170565",
+          "label": "太阳能板",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "太阳能光伏构件\n当地能源 问题\n太阳能资源丰富\n太阳能光伏板选型的考虑因素：成本，耐候性，曲面适应性"
+                },
+                {
+                  "type": "image",
+                  "src": "image/太阳能板选型对比.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/太阳能板透明度 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/太阳能板爆炸图 [转换].jpg",
+                  "caption": "爆炸图",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779102709752",
+          "label": "特朗勃墙构造设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "特朗勃墙作用\n本方案使用了一种轻质困凝土筒结合当地砂石，在保证特朗勃墙质量对额前提下较少运输荷载"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/特朗勃墙 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/特朗勃墙位置.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/阳光房2.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019954446",
+          "label": "构件列表",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/构件表.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "name": "施工管理",
+      "sections": [
+        {
+          "id": "sec_1778553299078",
+          "type": "text",
+          "label": "建造管理",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553328841",
+          "type": "image",
+          "label": "施工场地布置",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553309239",
+          "type": "image",
+          "label": "施工顺序",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553409811",
+          "type": "image",
+          "label": "运输规划",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553419732",
+          "type": "image",
+          "label": "施工周期",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553445953",
+          "type": "image",
+          "label": "器械列表",
+          "content": "",
+          "caption": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block_1779779138007",
+          "label": "施工场地设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "施工场地总平",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019032584",
+          "label": "施工管理",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "施工管理需要注意\n气候限制下施工周期20天\n运输限制，器械限制"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/建造步骤1.jpg",
+                  "caption": "stage 1",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/建造步骤2.jpg",
+                  "caption": "stage 2",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/建造步骤 3.jpg",
+                  "caption": "stage 3",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "Day 1-3\n打地螺丝\n放线定位、打地螺丝、调平\n"
+                },
+                {
+                  "type": "text",
+                  "content": "Day 4-6\n铺设地基框架\n安装地梁、横撑、连接件、找平、焊接或螺栓固定\n"
+                },
+                {
+                  "type": "text",
+                  "content": "Day 7-9 \n铺设楼板\n先铺设三层柔性支撑垫片以满足抗震要求，再螺栓连接。"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "使用器械：\n液压旋桩机, 全站仪/经纬仪、水准仪、激光水平仪\n"
+                },
+                {
+                  "type": "text",
+                  "content": "使用器械：\n大功率冲击扳手、扭矩扳手、手电钻；水准仪、长水平尺、塞尺, 随车吊"
+                },
+                {
+                  "type": "text",
+                  "content": "使用器械：\n螺钉枪、手电钻、充电起子机，靠尺、塞尺\n"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/建造步骤4.jpg",
+                  "caption": "stage 4",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/建造步骤 5.jpg",
+                  "caption": "stage 5",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/建造步骤6.jpg",
+                  "caption": "stage 6",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "Day 10-13\n安装承重墙\n墙体拼装、固定、临时支撑、垂直度校正。\n"
+                },
+                {
+                  "type": "text",
+                  "content": "Day 14-16\n吊装屋顶\n先两边后中间，三片屋顶拼装完成后通过液压千斤顶和锚固件对拱施加预应力。"
+                },
+                {
+                  "type": "text",
+                  "content": "Day 17-20\n室内完善\n安装楼梯坡道，扶手，急救平台，成品旱厕。\n搭建特朗勃墙，预制分隔墙板，拼装家具。\n调试屋顶光伏构建，配置地下设备区。"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "使用器械：\n随车吊、可调钢管支撑，膨胀螺栓安装器、激光垂直仪、磁力线坠、长水平尺"
+                },
+                {
+                  "type": "text",
+                  "content": "使用器械：\n随车吊、脚手架；电扳手、焊机、安全绳"
+                },
+                {
+                  "type": "text",
+                  "content": "使用器械：\n随车吊，螺钉枪、手电钻\n"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019132129",
+          "label": "器械列表",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/器械表.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019151554",
+          "label": "运输管理",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/运输管理1.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/运输管理2.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interior",
+      "name": "室内设计",
+      "sections": [
+        {
+          "id": "sec_1778553477649",
+          "type": "text",
+          "label": "室内设计出发点",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553491083",
+          "type": "image",
+          "label": "平面图",
+          "content": "",
+          "caption": ""
+        },
+        {
+          "id": "sec_1778553501443",
+          "type": "image",
+          "label": "渲染图",
+          "content": "",
+          "caption": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block_1779006336652",
+          "label": "藏式室内风格",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/藏式家具透视图.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式家具照片.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式室内风格"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779003062878",
+          "label": "藏式家居",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式家具布局特点"
+                },
+                {
+                  "type": "image",
+                  "src": "image/汉藏式家具布置.jpg",
+                  "caption": "藏式家具分布由低到高",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/汉式家具布置.jpg",
+                  "caption": "藏式家具分布由高到低",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "藏式家具尺度特点\n"
+                },
+                {
+                  "type": "image",
+                  "src": "image/藏式家具轴侧图.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/常见家具尺寸.jpg",
+                  "caption": "尺度excel",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019421917",
+          "label": "家具设计一览",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "尺度，实用性说明\n软木板。工字钢框架\n可到地组装"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/家具轴侧 [转换].jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779019449654",
+          "label": "效果图",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/诊疗室.png",
+                  "caption": "诊疗室",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/输液室.png",
+                  "caption": "输液室",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "活动室的相关设计",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page_1779438311726",
+      "name": "自保障设计",
+      "blocks": [
+        {
+          "id": "block_1779438331174",
+          "label": "自保障设计",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "气候条件：充足的太阳能资源和水环境，医疗产生的废水对环境的影响"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/污水处理.jpg",
+                  "caption": "水处理指标",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "image/光电转换设备.jpg",
+                  "caption": "光电转换设备列表",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/自保障系统.jpg",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page_1779548348588",
+      "name": "基于仿真的建筑形态优化",
+      "blocks": [
+        {
+          "id": "block_1779548357104",
+          "label": "多目标优化",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "多目标优化他只优化目标不止一个，且相互之间往往有制约关系。比如建筑形态会同时影响建筑能耗，风阻和室内采光等问题，因此可作为多目标优化研究。这列优化问题结果往往不唯一，因此尝尝采用NSGA-II（非支配排序遗传算法）求出非支配解集。在非支配解集中，任意解都不可能在所有方面都优于任意一个其他解，也就是说，非支配解集是一系列各有侧重的最优方案。\n在本次课题中，我厂是通过建筑仿真控制建筑形体，并集成太阳辐射，室内采光和风阻的模拟。这个项目对我的框架搭建能力和多平台数据转换能力提出了更多的要求。\n附完整代码github链接：\nhttps://github.com/yiyiy12345/-.git"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/程序框架.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "**单一职责** | 每个模块只做一件事：geometry 只负责建模，simulation 只负责仿真计算，optimization 只负责寻优 | 模块可独立测试、独立修改，不会牵一发动全身 |\n| **接口隔离** | 模块之间通过简单的函数签名或 Callable 接口通信 | 替换任意模块（如换 CFD 风工程求解器）不需要修改其他代码 |\n| **配置驱动** | 所有可变参数集中在 `config.json`，避免硬编码 | 用户无需了解代码即可调整优化范围、仿真参数 |\n| **数据流单向** | 配置→几何→仿真→优化→输出，数据沿固定方向流动 | 依赖清晰，调试时可定位到具体环节 |**可测试性**——每个模块可独立运行：`MockEvaluator` 可脱离 EPW/3DM 单独测试优化算法\n2. **可恢复性**——NSGA-II 每 5 代自动保存检查点，支持 `--resume` 从中断处继续\n3. **可观测性**——tqdm 进度条实时显示当前代数、最佳 CV 和风荷载，日志同时写入文件\n4. **平台兼容**——纯 Python 实现，不依赖 Rhino 或 Grasshopper API，可在无 GUI 的服务器运行\n5. **易扩展**——增加新目标函数、新变量、新约束只需修改 problem.py 中的几行"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "屋顶形态控制逻辑",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/procedure.png",
+                  "caption": "",
+                  "wallpaper": false
+                },
+                {
+                  "type": "text",
+                  "content": "开发便利设计：\n1.增加mock模式，可以在epw文件确实的情况下快速开始仿真以检验种群参数取值的合理性。\n2.增加断点(hash)和读取（resume）功能，断点功能被动触发，放置程序因意外停止优化。\n3.优化进度可视化。终端中显示优化进度条和预估完成时间，以及部分子代参数。"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/非支配解集太阳辐射仿真图.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/非支配解集风阻仿真图.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/优化过程子代变化.png",
+                  "caption": "优化过程子代变化",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "优化过程子代变化反映的问题"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/帕累托解.png",
+                  "caption": "帕累托解（换成3D展示）",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779628674637",
+          "label": "副产物",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "两个目标优化",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "两个目标优化"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "台地对风阻的影响",
+                  "wallpaper": false
+                },
+                {
+                  "type": "image",
+                  "src": "",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "台地对风阻的影响"
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "image",
+                  "src": "image/屏幕截图 2026-05-23 215330.png",
+                  "caption": "",
+                  "wallpaper": false
+                }
+              ],
+              "height": 200
+            },
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "风阻计算方法的尝试"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "block_1779628737245",
+          "label": "reference",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "type": "text",
+                  "content": "[1]\tX. Bai, P. Shi, China’s urbanization at a turning point—challenges and opportunities, Science 388 (2025) eadw3443.\n[2]\tS. Abu Dabous, F. Hosny, A review of building envelope retrofitting methods for improving energy efficiency, aesthetic, and indoor environmental quality, Energy Nexus 18 (2025) 100407. https://doi.org/10.1016/j.nexus.2025.100407.\n[3]\tS.H. Godasiaei, O.A. Ejohwomu, H. Zhong, D. Booker, Integrating experimental analysis and machine learning for enhancing energy efficiency and indoor air quality in educational buildings, Building and Environment 276 (2025) 112874. https://doi.org/10.1016/j.buildenv.2025.112874.\n[4]\tA.H.A. Dehwah, A. Haredy, M. Krarti, Retrofit analysis of historical buildings to net-zero energy: Case study of the Ain village, Saudi Arabia, Energy and Buildings 258 (2022) 111826. https://doi.org/10.1016/j.enbuild.2021.111826.\n[5]\tX. Liu, Z. Gou, Occupant-centric HVAC and window control: A reinforcement learning model for enhancing indoor thermal comfort and energy efficiency, Building and Environment 250 (2024) 111197. https://doi.org/10.1016/j.buildenv.2024.111197.\n[6]\tM. Hagenau, M. Jradi, Dynamic modeling and performance evaluation of building envelope enhanced with phase change material under Danish conditions, Journal of Energy Storage 30 (2020) 101536. https://doi.org/10.1016/j.est.2020.101536.\n[7]\tB. Delač, B. Pavković, K. Lenić, D. Mađerić, Integrated optimization of the building envelope and the HVAC system in nZEB refurbishment, Applied Thermal Engineering 211 (2022). https://doi.org/10.1016/j.applthermaleng.2022.118442.\n[8]\tE. Cuce, P.M. Cuce, E. Alvur, Y.N. Yilmaz, S. Saboor, I. Ustabas, E. Linul, M. Asif, Experimental performance assessment of a novel insulation plaster as an energy-efficient retrofit solution for external walls: A key building material towards low/zero carbon buildings, Case Studies in Thermal Engineering 49 (2023) 103350. https://doi.org/10.1016/j.csite.2023.103350.\n[9]\tW. Li, M. Rahim, B. Wang, M. El Ganaoui, R. Bennacer, Enhancing building envelope performance via dynamic PCM Integration in biomaterial concrete walls: A numerical evaluation and multi-objective optimization study, Building and Environment 280 (2025). https://doi.org/10.1016/j.buildenv.2025.113141.\n[10]\tW. Li, R. Li, W. Sui, C. Liu, L. Yang, Optimizing passive energy savings in rural self-built houses: Integrating phase change materials across China’s climate zones, Energy 311 (2024) 133377. https://doi.org/10.1016/j.energy.2024.133377.\n[11]\tR. Jin, B. Zhong, L. Ma, A. Hashemi, L. Ding, Integrating BIM with building performance analysis in project life-cycle, Automation in Construction 106 (2019) 102861. https://doi.org/10.1016/j.autcon.2019.102861.\n[12]\tF. Salata, A. Ciardiello, J. Dell’Olmo, V. Ciancio, M. Ferrero, F. Rosso, Geometry optimization in the schematic design phase of low-energy buildings for all European climates through genetic algorithms, Sustainable Cities and Society 112 (2024) 105639. https://doi.org/10.1016/j.scs.2024.105639.\n[13]\tC. Citadini de Oliveira, I. Catão Martins Vaz, E. Ghisi, Retrofit strategies to improve energy efficiency in buildings: An integrative review, Energy and Buildings 321 (2024). https://doi.org/10.1016/j.enbuild.2024.114624.\n[14]\tS. Chardon, B. Brangeon, E. Bozonnet, C. Inard, Construction cost and energy performance of single family houses: From integrated design to automated optimization, Automation in Construction 70 (2016) 1–13. https://doi.org/10.1016/j.autcon.2016.06.011.\n[15]\tA. Kitsopoulou, N. Ziozas, P. Iliadis, E. Bellos, C. Tzivanidis, N. Nikolopoulos, Energy performance analysis of alternative building retrofit interventions for the four climatic zones of Greece, Journal of Building Engineering 87 (2024) 109015. https://doi.org/10.1016/j.jobe.2024.109015.\n[16]\tH. Wei, Y. Jiao, Z. Wang, W. Wang, T. Zhang, Optimal retrofitting scenarios of multi-objective energy-efficient historic building under different national goals integrating energy simulation, reduced order modelling and NSGA-II algorithm, Building Simulation 17 (2024) 933–954. https://doi.org/10.1007/s12273-024-1122-9.\n[17]\tX. Zhan, W. Zhang, R. Chen, Y. Bai, J. Wang, G. Deng, Non-dominated sorting genetic algorithm-II: A multi-objective optimization method for building renovations with half-life cycle and economic costs, Building and Environment 267 (2025). https://doi.org/10.1016/j.buildenv.2024.112155.\n[18]\tL. Xie, T. Chen, N. Joshi, Z. Li, Climate-responsive retrofitting strategy of elderly housing: Health impacts based on data-driven multi-objective optimization of building envelopes, Building and Environment 285 (2025) 113554. https://doi.org/10.1016/j.buildenv.2025.113554.\n[19]\tK. Alexakis, V. Benekis, P. Kokkinakos, D. Askounis, Genetic algorithm-based multi-objective optimisation for energy-efficient building retrofitting: A systematic review, Energy and Buildings 328 (2025) 115216. https://doi.org/10.1016/j.enbuild.2024.115216.\n[20]\tX. Han, T. Fang, Y. Wang, Z. Wang, J. Xu, Multi-objective optimization of passive design parameters for rural residences based on GA-BP-NSGA-II: A case study of cold regions in China, Journal of Building Engineering 112 (2025) 113624. https://doi.org/10.1016/j.jobe.2025.113624.\n[21]\tB. Ge, Z. Fan, J. Liu, Two-stage multi-objective optimization of solar roof design for railway-station represented large-space public buildings considering thermal efficiency, carbon emissions, and daylighting, Building and Environment 280 (2025) 113084. https://doi.org/10.1016/j.buildenv.2025.113084.\n"
+                }
+              ],
+              "height": 200
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "bgColor": {
+      "r": 19,
+      "g": 10,
+      "b": 145
+    },
+    "titleFont": {
+      "family": "SimHei",
+      "size": 50,
+      "color": "#ffffff"
+    },
+    "contentFont": {
+      "family": "SimHei",
+      "size": 14,
+      "color": "#eeedf7"
+    },
+    "noteFont": {
+      "family": "SimHei",
+      "size": 16,
+      "color": "#ffffff"
+    }
+  }
+};

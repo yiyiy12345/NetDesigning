@@ -48,35 +48,38 @@ function preloadMissingAspectRatios(data) {
     return Promise.all(promises);
 }
 
+function processData(siteData) {
+    applySettings(siteData);
+    renderNav(siteData);
+    preloadMissingAspectRatios(siteData).then(() => {
+        renderPages(siteData);
+        setTimeout(initWallpaperImages, 100);
+    });
+}
+
 function loadData() {
-    const saved = localStorage.getItem('siteData');
-    if (saved) {
-        const siteData = JSON.parse(saved);
-        applySettings(siteData);
-        renderNav(siteData);
-        preloadMissingAspectRatios(siteData).then(() => {
-            renderPages(siteData);
-            setTimeout(initWallpaperImages, 100);
-        });
+    // Priority 1: Inline data embedded in HTML (works with file:// - no CORS)
+    if (window.__SITE_DATA__) {
+        processData(window.__SITE_DATA__);
         return;
     }
     
-    // Fallback: load from site-data.json (for GitHub Pages standalone mode)
+    // Priority 2: localStorage (editor context, same origin)
+    const saved = localStorage.getItem('siteData');
+    if (saved) {
+        processData(JSON.parse(saved));
+        return;
+    }
+    
+    // Priority 3: fetch site-data.json (GitHub Pages)
     fetch('../site-data.json')
         .then(r => {
             if (!r.ok) throw new Error('No data file');
             return r.json();
         })
-        .then(siteData => {
-            applySettings(siteData);
-            renderNav(siteData);
-            preloadMissingAspectRatios(siteData).then(() => {
-                renderPages(siteData);
-                setTimeout(initWallpaperImages, 100);
-            });
-        })
+        .then(processData)
         .catch(() => {
-            document.getElementById('pageContainer').innerHTML = '<div style="padding:40px;color:rgba(255,255,255,0.5);">数据加载中，请确保 site-data.json 存在于项目根目录</div>';
+            document.getElementById('pageContainer').innerHTML = '<div style="padding:40px;color:rgba(255,255,255,0.5);">数据加载失败，请确保 index.html 与 site-data.json、image/ 文件夹在同一目录</div>';
         });
 }
 
