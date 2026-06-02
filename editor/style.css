@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(19, 10, 145);
+    --title-font: 'Microsoft YaHei', sans-serif;
+    --title-size: 32px;
+    --title-color: #ffffff;
+    --content-font: 'Microsoft YaHei', sans-serif;
+    --content-size: 16px;
+    --content-color: #ffffff;
+    --note-font: 'Microsoft YaHei', sans-serif;
+    --note-size: 14px;
+    --note-color: #cccccc;
+    --caption-font: 'Microsoft YaHei', sans-serif;
+    --caption-size: 12px;
+    --caption-color: #cccccc;
+}
+
+body {
+    font-family: var(--content-font);
+    background-color: var(--bg-color);
+    color: var(--content-color);
+    min-height: 100vh;
+}
+
+.editor-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+.tree-nav {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.tree-item {
+    margin-bottom: 4px;
+}
+
+.tree-node {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.tree-node:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tree-node.active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.tree-icon {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+    flex-shrink: 0;
+}
+
+.tree-label {
+    flex: 1;
+    font-size: 14px;
+}
+
+.tree-actions {
+    display: none;
+    gap: 4px;
+}
+
+.tree-node:hover .tree-actions {
+    display: flex;
+}
+
+.tree-action-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.tree-action-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.tree-children {
+    padding-left: 20px;
+    display: none;
+}
+
+.tree-children.expanded {
+    display: block;
+}
+
+.sidebar-actions {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.main-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 10px;
+}
+
+.toolbar-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.toolbar-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.toolbar-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.content-area {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.empty-state {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+}
+
+.content-page {
+    display: none;
+}
+
+.content-page.active {
+    display: block;
+}
+
+.block {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.block:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.block.selected {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.block.dragging {
+    opacity: 0.5;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+.block-header {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.block-title {
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: grab;
+}
+
+.block-title:active {
+    cursor: grabbing;
+}
+
+.block-actions {
+    display: none;
+    gap: 8px;
+}
+
+.block:hover .block-actions {
+    display: flex;
+}
+
+.block-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.block-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.block-btn.delete:hover {
+    background: rgba(200, 0, 0, 0.7);
+}
+
+.block-body {
+    padding: 20px;
+}
+
+.block-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.block-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    position: relative;
+}
+
+.row-resize-handle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    cursor: ns-resize;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+    border-radius: 6px 0 0 6px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.block-row:hover .row-resize-handle {
+    opacity: 1;
+}
+
+.row-resize-handle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.row-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.row-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.row-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.row-btn.delete:hover {
+    background: rgba(200, 0, 0, 0.5);
+}
+
+.row-content {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+
+.cell {
+    position: relative;
+    background: var(--bg-color);
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cell-image {
+    flex: 1;
+    width: 100%;
+    min-height: 150px;
+    aspect-ratio: 16/10;
+    background: var(--bg-color);
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cell-image:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 var(--shadow-offset, 6px) var(--shadow-blur, 20px) var(--shadow-color, rgba(0,0,0,0.35));
+}
+
+.cell-image.has-image {
+    border: none;
+}
+
+.cell-image svg {
+    width: 36px;
+    height: 36px;
+    stroke: rgba(255, 255, 255, 0.3);
+    margin-bottom: 8px;
+}
+
+.cell-image span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.cell-image img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    max-width: 100%;
+}
+
+.cell-image.has-image img {
+    display: block;
+}
+
+.cell-image.has-image svg,
+.cell-image.has-image span {
+    display: none;
+}
+
+.cell-model {
+    flex: 1;
+    width: 100%;
+    min-height: 150px;
+    background: var(--bg-color);
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell-model:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 var(--shadow-offset, 6px) var(--shadow-blur, 20px) var(--shadow-color, rgba(0,0,0,0.35));
+}
+
+.cell-model iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    background: #fff;
+}
+
+.cell-model span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.cell-caption {
+    padding: 6px 0 0 0;
+    background: none;
+    text-align: center;
+}
+
+.cell-caption input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--caption-color, #cccccc);
+    font-size: var(--caption-size, 12px);
+    font-family: var(--caption-font, var(--content-font));
+    text-align: center;
+}
+
+.cell-caption input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.cell-actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
+    gap: 4px;
+    z-index: 10;
+}
+
+.cell:hover .cell-actions {
+    display: flex;
+}
+
+.cell-btn {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cell-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cell-btn.delete:hover {
+    background: rgba(200, 0, 0, 0.7);
+}
+
+.cell-type-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 2px 8px;
+    background: rgba(76, 175, 80, 0.8);
+    border-radius: 3px;
+    font-size: 10px;
+    color: white;
+    display: none;
+}
+
+.cell:hover .cell-type-badge {
+    display: block;
+}
+
+.cell-image.wallpaper .cell-type-badge {
+    background: rgba(255, 152, 0, 0.8);
+}
+
+.cell-text {
+    flex: 1;
+    width: 100%;
+    min-height: 100px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: var(--content-size);
+    font-family: var(--content-font);
+    line-height: 1.8;
+    resize: vertical;
+    outline: none;
+    border-radius: 6px;
+}
+
+.cell-text:focus {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.cell-text::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.add-cell-btn {
+    width: 60px;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.3s;
+}
+
+.add-cell-btn:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.add-cell-btn span {
+    font-size: 24px;
+}
+
+.add-cell-btn small {
+    font-size: 10px;
+}
+
+.add-row-btn {
+    padding: 12px;
+    text-align: center;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.add-row-btn:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: rgba(30, 20, 100, 0.95);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+.modal-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.close-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section h3 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.color-input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.color-input-group label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.color-input-group input[type="number"] {
+    width: 60px;
+    text-align: center;
+}
+
+.color-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 20px;
+}
+
+.font-setting {
+    margin-bottom: 20px;
+}
+
+.font-setting > label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+.font-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.font-controls select {
+    flex: 1;
+}
+
+.font-controls input[type="number"] {
+    width: 60px;
+}
+
+.font-controls input[type="color"] {
+    width: 40px;
+    height: 36px;
+    padding: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}

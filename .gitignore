@@ -1,0 +1,7 @@
+node_modules/
+*.pptx
+*.pdf
+*.png
+image/*
+model/*
+.omo/

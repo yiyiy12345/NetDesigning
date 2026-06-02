@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建筑设计编辑系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">EDITOR</h1>
+                <p class="subtitle">网站编辑系统</p>
+            </div>
+            <nav class="tree-nav" id="treeNav"></nav>
+            <div class="sidebar-actions">
+                <button class="btn btn-primary" onclick="addPage()">+ 新增页面</button>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <div class="toolbar">
+                <div class="toolbar-group">
+                    <button class="toolbar-btn" onclick="addBlock('text')" title="添加文本区块">
+                        <svg viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+                        添加区块
+                    </button>
+                </div>
+                <div class="toolbar-group">
+                    <button class="toolbar-btn" onclick="openSettings()" title="全局设置">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        全局设置
+                    </button>
+                    <button class="toolbar-btn" onclick="exportData()" title="导出数据">
+                        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        导出数据
+                    </button>
+                    <button class="toolbar-btn" onclick="exportPPT()" title="导出PPT" style="border-color: #FF5722;">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        导出PPT
+                    </button>
+                    <button class="toolbar-btn" onclick="syncToDisplay()" title="同步到展示网站" style="border-color: #4CAF50;">
+                        <svg viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+                        同步展示
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-area" id="contentArea">
+                <div class="empty-state">
+                    <p>从左侧选择一个页面开始编辑</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal" id="settingsModal">
+        <div class="modal-content settings-modal">
+            <div class="modal-header">
+                <h2>全局设置</h2>
+                <button class="close-btn" onclick="closeSettings()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>背景颜色</h3>
+                    <div class="color-input-group">
+                        <label>R</label>
+                        <input type="number" id="bgR" min="0" max="255" value="19" onchange="updateBgColor()">
+                        <label>G</label>
+                        <input type="number" id="bgG" min="0" max="255" value="10" onchange="updateBgColor()">
+                        <label>B</label>
+                        <input type="number" id="bgB" min="0" max="255" value="145" onchange="updateBgColor()">
+                        <div class="color-preview" id="bgColorPreview"></div>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>字体设置</h3>
+                    <div class="font-setting">
+                        <label>标题字体</label>
+                        <div class="font-controls">
+                            <select id="titleFontFamily" onchange="updateFont()">
+                                <option value="Microsoft YaHei">微软雅黑</option>
+                                <option value="SimHei">黑体</option>
+                                <option value="SimSun">宋体</option>
+                                <option value="FangSong">仿宋</option>
+                                <option value="KaiTi">楷体</option>
+                            </select>
+                            <input type="number" id="titleFontSize" value="32" min="12" max="72" onchange="updateFont()">
+                            <input type="color" id="titleFontColor" value="#ffffff" onchange="updateFont()">
+                        </div>
+                    </div>
+                    <div class="font-setting">
+                        <label>正文字体</label>
+                        <div class="font-controls">
+                            <select id="contentFontFamily" onchange="updateFont()">
+                                <option value="Microsoft YaHei">微软雅黑</option>
+                                <option value="SimHei">黑体</option>
+                                <option value="SimSun">宋体</option>
+                                <option value="FangSong">仿宋</option>
+                                <option value="KaiTi">楷体</option>
+                            </select>
+                            <input type="number" id="contentFontSize" value="16" min="12" max="36" onchange="updateFont()">
+                            <input type="color" id="contentFontColor" value="#ffffff" onchange="updateFont()">
+                        </div>
+                    </div>
+                    <div class="font-setting">
+                        <label>注释字体</label>
+                        <div class="font-controls">
+                            <select id="noteFontFamily" onchange="updateFont()">
+                                <option value="Microsoft YaHei">微软雅黑</option>
+                                <option value="SimHei">黑体</option>
+                                <option value="SimSun">宋体</option>
+                                <option value="FangSong">仿宋</option>
+                                <option value="KaiTi">楷体</option>
+                            </select>
+                            <input type="number" id="noteFontSize" value="14" min="10" max="24" onchange="updateFont()">
+                            <input type="color" id="noteFontColor" value="#cccccc" onchange="updateFont()">
+                        </div>
+                    </div>
+                    <div class="font-setting">
+                        <label>图名字体</label>
+                        <div class="font-controls">
+                            <select id="captionFontFamily" onchange="updateFont()">
+                                <option value="Microsoft YaHei">微软雅黑</option>
+                                <option value="SimHei">黑体</option>
+                                <option value="SimSun">宋体</option>
+                                <option value="FangSong">仿宋</option>
+                                <option value="KaiTi">楷体</option>
+                            </select>
+                            <input type="number" id="captionFontSize" value="12" min="8" max="24" onchange="updateFont()">
+                            <input type="color" id="captionFontColor" value="#cccccc" onchange="updateFont()">
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>投影设置</h3>
+                    <div class="font-setting">
+                        <label>阴影比例 (1/N 图框宽)</label>
+                        <div class="font-controls">
+                            <input type="number" id="shadowDivisor" value="20" min="4" max="60" onchange="updateShadow()" style="width:80px;">
+                            <label style="margin-left:12px;">不透明度</label>
+                            <input type="number" id="shadowOpacity" value="0.35" min="0.05" max="0.8" step="0.05" onchange="updateShadow()" style="width:70px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="imagePicker" style="display:none" accept="image/*" webkitdirectory>
+
+    <script src="script.js"></script>
+</body>
+</html>
