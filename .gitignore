@@ -1,7 +1,5 @@
 node_modules/
 *.pptx
 *.pdf
-*.png
-image/*
-model/*
 .omo/
+# 保留 image/ 和 model/ 目录下所有文件，使 GitHub Pages 能展示图片
